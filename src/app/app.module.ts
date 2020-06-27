@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,15 @@ import { TaskformComponent } from './components/taskmanager/taskform/taskform.co
 import { TasklistComponent } from './components/taskmanager/tasklist/tasklist.component';
 import { TaskitemComponent } from './components/taskmanager/tasklist/taskitem/taskitem.component';
 import { from } from 'rxjs';
+import { LoginComponent } from './components/login/login.component';
+import { RegistrationComponent } from './components/registration/registration.component';
+
+const routes = [
+  {path:'login', component:LoginComponent},
+  {path:'register', component:RegistrationComponent},
+  {path:'tasks', component:TaskmanagerComponent},
+
+];
 
 @NgModule({
   declarations: [
@@ -20,12 +30,15 @@ import { from } from 'rxjs';
     TaskmanagerComponent,
     TaskformComponent,
     TasklistComponent,
-    TaskitemComponent
+    TaskitemComponent,
+    LoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
