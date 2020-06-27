@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { TaskmanagerComponent } from './components/taskmanager/taskmanager.compo
 import { TaskformComponent } from './components/taskmanager/taskform/taskform.component';
 import { TasklistComponent } from './components/taskmanager/tasklist/tasklist.component';
 import { TaskitemComponent } from './components/taskmanager/tasklist/taskitem/taskitem.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { TaskitemComponent } from './components/taskmanager/tasklist/taskitem/ta
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

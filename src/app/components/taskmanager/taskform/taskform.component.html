@@ -1,13 +1,13 @@
 <form>
     <div class="form-group">
         <label for="title">Title</label>
-        <input type="text" id="title" class="form-control">
+        <input type="text" id="title" name="title" class="form-control" [(ngModel)]="title">
     </div>
 
     <div class="form-group">
         <label for="description">Desription</label>
-        <textarea type="text" id="description" class="form-control"></textarea>
+        <textarea type="text" id="description" name="description" class="form-control" [(ngModel)]="description"></textarea>
     </div>
 
-    <button class="btn btn-primary">Add Task</button>
+    <button class="btn btn-primary" (click)='handleAdd()'>Add Task</button>
 </form>
