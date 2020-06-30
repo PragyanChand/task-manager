@@ -72,4 +72,12 @@ export class TaskserviceService {
     )
       this.tasks.push(newTask);
   }
+
+  getSingleTask(id): Task {
+    for (let i = 0; i < this.tasks.length; i++){
+      if(this.tasks[i].id == id){
+        return this.tasks[i];
+      }
+    }
+  }
 }

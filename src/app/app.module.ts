@@ -14,11 +14,16 @@ import { TaskitemComponent } from './components/taskmanager/tasklist/taskitem/ta
 import { from } from 'rxjs';
 import { LoginComponent } from './components/login/login.component';
 import { RegistrationComponent } from './components/registration/registration.component';
+import { PagenotfoundComponent } from './components/shared/pagenotfound/pagenotfound.component';
+import { TaskDetailComponent } from './components/taskmanager/task-detail/task-detail.component';
 
 const routes = [
+  {path: '', redirectTo:'/login', pathMatch:'full'},
   {path:'login', component:LoginComponent},
   {path:'register', component:RegistrationComponent},
   {path:'tasks', component:TaskmanagerComponent},
+  {path:'tasks/:id', component:TaskDetailComponent},
+  {path: '**', component:PagenotfoundComponent}
 
 ];
 
@@ -32,7 +37,9 @@ const routes = [
     TasklistComponent,
     TaskitemComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    PagenotfoundComponent,
+    TaskDetailComponent
   ],
   imports: [
     BrowserModule,
