@@ -15,7 +15,7 @@ export class TaskserviceService {
 
     },
     {
-      id: 1003,
+    id: 1003,
     title:'Node Learning',
     description:'I love to learn node',
     completed : false,
@@ -76,6 +76,7 @@ export class TaskserviceService {
   getSingleTask(id): Task {
     for (let i = 0; i < this.tasks.length; i++){
       if(this.tasks[i].id == id){
+        console.log(this.tasks[i]);
         return this.tasks[i];
       }
     }
