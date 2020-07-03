@@ -1,3 +1,2 @@
 <a [routerLink] = "['/tasks', task.id]" [queryParams]="{'foo':'bar'}">{{task.title}}</a>
 <button class="btn btn-danger btn-sm float-right" (click)='handleDelete()'>X</button>
-{{task.date | date:'shortTime'}}

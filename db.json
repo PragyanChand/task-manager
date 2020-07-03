@@ -1,0 +1,54 @@
+{
+  "tasks": [
+      {
+      "id": 1002,
+      "title": "Angular Learning",
+      "description":"I love to learn angular",
+      "completed": false,
+      "date": "12/07/2020"
+  
+      },
+      {
+        "id": 1003,
+        "title": "Node Learning",
+        "description":"I love to learn Node",
+        "completed": false,
+        "date": "11/07/2020"
+    
+        },
+        {
+          "id": 1004,
+          "title": "Bootstrap Learning",
+          "description":"I love to learn Bootstrap",
+          "completed": false,
+          "date": "15/07/2020"
+      
+          },
+          {
+            "id": 1002,
+            "title": "CSS Learning",
+            "description":"I love to learn CSS",
+            "completed": false,
+            "date": "14/07/2020"
+        
+            }
+      
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
