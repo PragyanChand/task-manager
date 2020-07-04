@@ -17,6 +17,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { PagenotfoundComponent } from './components/shared/pagenotfound/pagenotfound.component';
 import { TaskDetailComponent } from './components/taskmanager/task-detail/task-detail.component';
+import { DoneTaskDirective } from './Directives/done-task.directive';
 
 const routes = [
   {path: '', redirectTo:'/login', pathMatch:'full'},
@@ -40,7 +41,8 @@ const routes = [
     LoginComponent,
     RegistrationComponent,
     PagenotfoundComponent,
-    TaskDetailComponent
+    TaskDetailComponent,
+    DoneTaskDirective
   ],
   imports: [
     BrowserModule,

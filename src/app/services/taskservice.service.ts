@@ -7,13 +7,13 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class TaskserviceService {
-  tasks: Observable<Task[]> = [];
+  tasks: Task[] = [];
 
   constructor(private http: HttpClient) { }
   getTasks(): Observable<Task[]> {
     return this.http.get<Task[]>("http://localhost:3000/tasks");
   }
-  /*deleteTask(id): void {
+  deleteTask(id) {
 
     for (let i = 0; i < this.tasks.length; i++){
       if(this.tasks[i].id === id){
@@ -23,7 +23,6 @@ export class TaskserviceService {
     }
 
   }
-
   addTask(title, description): void {
 
     const newTask = new Task(
@@ -33,7 +32,7 @@ export class TaskserviceService {
     )
       this.tasks.push(newTask);
   }
-
+  
   getSingleTask(id): Task {
     for (let i = 0; i < this.tasks.length; i++){
       if(this.tasks[i].id == id){
@@ -41,5 +40,5 @@ export class TaskserviceService {
         return this.tasks[i];
       }
     }
-  }*/
+  }
 }
