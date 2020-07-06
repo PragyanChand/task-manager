@@ -18,6 +18,7 @@ import { RegistrationComponent } from './components/registration/registration.co
 import { PagenotfoundComponent } from './components/shared/pagenotfound/pagenotfound.component';
 import { TaskDetailComponent } from './components/taskmanager/task-detail/task-detail.component';
 import { DoneTaskDirective } from './Directives/done-task.directive';
+import { MyUppercasePipe } from './Pipes/my-uppercase.pipe';
 
 const routes = [
   {path: '', redirectTo:'/login', pathMatch:'full'},
@@ -42,7 +43,8 @@ const routes = [
     RegistrationComponent,
     PagenotfoundComponent,
     TaskDetailComponent,
-    DoneTaskDirective
+    DoneTaskDirective,
+    MyUppercasePipe
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 <div *ngIf="tasks.length === 0" class="alert alert-info">No tasks to show!!!</div>
 <ul class="list-group">
-    <li appDoneTask class="list-group-item" *ngFor="let i of tasks">
+    <li appDoneTask [status]="i.completed" class="list-group-item" *ngFor="let i of tasks">
         <app-taskitem [task]="i"></app-taskitem>
     </li>
 </ul>

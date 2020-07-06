@@ -34,6 +34,9 @@ export class TaskserviceService {
   }
   
   getSingleTask(id): Task {
+    this.http.get("http://localhost:3000/tasks").subscribe((data) =>{
+      console.log(data);
+    })
     for (let i = 0; i < this.tasks.length; i++){
       if(this.tasks[i].id == id){
         console.log(this.tasks[i]);

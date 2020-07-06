@@ -1,10 +1,15 @@
-{
+{  "user":[
+  {
+    "username":"Pragyan",
+    "password":"Pragyan123"
+  }
+],
   "tasks": [
       {
       "id": 1002,
       "title": "Angular Learning",
       "description":"I love to learn angular",
-      "completed": false,
+      "completed": true,
       "date": "12/07/2020"
   
       },
@@ -20,7 +25,7 @@
           "id": 1004,
           "title": "Bootstrap Learning",
           "description":"I love to learn Bootstrap",
-          "completed": false,
+          "completed": true,
           "date": "15/07/2020"
       
           },
